@@ -1,0 +1,28 @@
+.btn-cart{
+    position: relative;
+}
+
+.btn-cart .badge{
+    position: absolute;
+    top: -1px;
+    right: 0;
+}
+
+//因為dropdown在navbar裡無法根據畫面空間自動變更顯示位置，故下此css讓其恢復功能
+.dropdown-menu--right{
+    right: 0;
+    left: auto;
+}
+//
+.jumbotron-bg{
+    background-image: url('https://images.unsplash.com/photo-1477901492169-d59e6428fc90?w=1350');
+}
+
+.bg--cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+}
+
+
