@@ -461,35 +461,61 @@
                             </table>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <h3 class="text-center mb-4">個人資料</h3>
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <th>Email</th>
-                                    <td>ag3456***@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <th>姓名</th>
-                                    <td>咬 * 手手</td>
-                                </tr>
-                                <tr>
-                                    <th>電話</th>
-                                    <td>987654***</td>
-                                </tr>
-                                <tr>
-                                    <th>地址</th>
-                                    <td>重慶南路一段122號</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <h3 class="text-center bg-light mt-4 py-3 font-weight-bold">訂購人資訊</h3>
+                    <form class="mt-2 needs-validation" novalidate>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="Name">姓名*</label>
+                                <input type="text" class="form-control" id="Name" placeholder="姓名" required>
+                                <div class="invalid-feedback">
+                                    請輸入姓名
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="Email">Email</label>
+                                <input type="email" class="form-control" id="Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md">
+                                <label for="inputState">國家*</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>台灣</option>
+                                    <option>美國</option>
+                                    <option>日本</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md">
+                                <label for="inputCity">城市*</label>
+                                <select id="inputCity" class="form-control">
+                                    <option selected>台北市</option>
+                                    <option>紐約</option>
+                                    <option>東京</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md">
+                                <label for="inputZip">郵遞區號</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">地址*</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="重慶南路1段122號" required>
+                            <div class="invalid-feedback">
+                                請輸入地址
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" class="btn btn-secondary mr-2">繼續選購</button>
+                            <button type="submit" class="btn btn-primary mr-2">確認付款</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-light py-5 text-center">
+    <footer class="bg-light py-5 text-center mt-4">
         <p class="text-secondary d-md-inline">© Copright 2019 瞎拚買賣</p>
         <a href="#" class="ml-2">Instagram</a>
         <a href="#" class="ml-2">Facebook</a>
