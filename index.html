@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><i class="fas fa-bone text-info mr-2"></i>瞎拚買賣</a>
         <div class="dropdown ml-auto">
@@ -24,13 +23,15 @@
                 <div class="h5">已選擇商品</div>
                 <table class="table">
                     <tr>
-                        <td><i class="far fa-trash-alt"></i></td>
+                        <td><a href="#" class="text-dark" data-toggle="modal" data-target="#removeModal"
+                                data-backdrop="static" data-title="刪除 金牌西裝"><i class="far fa-trash-alt"></i></a></td>
                         <td>金牌西裝</td>
                         <td>1件</td>
                         <td>$520</td>
                     </tr>
                     <tr>
-                        <td><i class="far fa-trash-alt"></i></td>
+                        <td><a href="#" class="text-dark" data-toggle="modal" data-target="#removeModal"
+                                data-backdrop="static" data-title="刪除 金牌女裝"><i class="far fa-trash-alt"></i></a></td>
                         <td>金牌女裝</td>
                         <td>1件</td>
                         <td>$480</td>
@@ -393,9 +394,131 @@
         </div>
     </section>
     <!-- 結帳頁面製作 -->
-    <section class="mt-3">
-        <h2>六角血拚 結帳</h2>
+    <section class="mt-3 pt-3">
+        <h2 class="h1 text-secondary text-center mt-5">瞎拚買賣 結帳</h2>
+        <div class="container">
+            <div class="form-row mb-4">
+                <div class="col-md-4">
+                    <div class="alert alert-success text-center rounded-pill" role="alert">
+                        1.輸入訂單資料
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-light text-center rounded-pill" role="alert">
+                        2.金流付款
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="alert alert-light text-center rounded-pill" role="alert">
+                        3.完成
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="cartdetail">
+                <div class="col-md-8">
+                    <div class="accordion">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center" id="headingOne">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    顯示購物車細節
+                                </button>
+                                <span class="h3 font-weight-bold">$ 580</span>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#cartdetail">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                        <th style="width: 650px;" scope="col">商品名稱</th>
+                                        <th style="width: 150px;" scope="col">數量</th>
+                                        <th scope="col" style="width: 100px;">小計</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle"><a href="#" class="text-dark" data-toggle="modal"
+                                                data-target="#removeModal" data-backdrop="static"
+                                                data-title="刪除 金牌西裝"><i class="far fa-trash-alt"></i></a></td>
+                                        <td class="align-middle"><img
+                                                src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350"
+                                                style="width: 90px;"></td>
+                                        <td class="align-middle" style="width: 650px;">金牌西裝</th>
+                                        <td class="align-middle">1件</td>
+                                        <td class="text-right align-middle">$520</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right" colspan="4">運費</th>
+                                        <td class="text-right font-weight-bold">$60</td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <td class="text-right" colspan="4">合計</th>
+                                        <td class="text-right font-weight-bold">$580</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-center mb-4">個人資料</h3>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <th>Email</th>
+                                    <td>ag3456***@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <th>姓名</th>
+                                    <td>咬 * 手手</td>
+                                </tr>
+                                <tr>
+                                    <th>電話</th>
+                                    <td>987654***</td>
+                                </tr>
+                                <tr>
+                                    <th>地址</th>
+                                    <td>重慶南路一段122號</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <footer class="bg-light py-5 text-center">
+        <p class="text-secondary d-md-inline">© Copright 2019 瞎拚買賣</p>
+        <a href="#" class="ml-2">Instagram</a>
+        <a href="#" class="ml-2">Facebook</a>
+        <a href="#" class="ml-2">About</a>
+        <p class="text-secondary mt-4">Made with Bootstrap4</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-white" id="removeModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>確認取消訂單?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger" style="width:76px;">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

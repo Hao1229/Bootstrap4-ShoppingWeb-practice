@@ -37,3 +37,9 @@ body {
 
 .btn.disabled {
   pointer-events: none; }
+
+.bg-transparent {
+  background-color: transparent; }
+
+.gototop {
+  cursor: pointer; }
