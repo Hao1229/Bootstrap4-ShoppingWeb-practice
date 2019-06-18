@@ -337,35 +337,64 @@
             </nav>
             <div class="row">
                 <div class="col-md-4">
-                    <h1 class="h2">金牌西裝<span class="text-secondary h4">(加拉哈德版)</span></h1>
-                    <div class="d-flex justify-content-between align-items-center border-bottom border-secondary">
-                        <span class="text-secondary"><del>售價$1299</del></span>
-                        <span class="h4 text-danger">網路價 NT$ <span class="font-weight-bold h3">520</span></span>
-                    </div>
-                    <div class="mt-3">
-                        <span>尺寸:</span>
-                        <div class="btn-group btn-group-sm" >
-                            <a href="#" class="btn btn-outline-secondary active">SM</a>
-                            <a href="#" class="btn btn-outline-secondary">M</a>
-                            <a href="#" class="btn btn-outline-secondary disabled">L</a>
-                            <a href="#" class="btn btn-outline-secondary">XL</a>
+                    <div class="sticky-top" style="top: 10px;">
+                        <h1 class="h2">金牌西裝<span class="text-secondary h4">(加拉哈德版)</span></h1>
+                        <div class="d-flex justify-content-between align-items-center border-bottom border-secondary">
+                            <span class="text-secondary"><del>售價$1299</del></span>
+                            <span class="h4 text-danger">網路價 NT$ <span class="font-weight-bold h3">520</span></span>
+                        </div>
+                        <div class="mt-3">
+                            <span>尺寸:</span>
+                            <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked>SM
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> M
+                                </label>
+                                <label class="btn btn-outline-secondary disabled">
+                                    <input type="radio" name="options" id="option3" autocomplete="off" disabled> L
+                                </label>
+                                <label class="btn btn-outline-secondary">
+                                    <input type="radio" name="options" id="option3" autocomplete="off">XL
+                                </label>
+                            </div>
+                        </div>
+                        <div class="input-group my-3">
+                            <select name="" id="" class="form-control mr-1">
+                                <option value="1">1 件</option>
+                                <option value="2">2 件</option>
+                                <option value="3">3 件</option>
+                            </select>
+                            <button class="btn btn-primary">加入購物車</button>
                         </div>
                     </div>
-
                 </div>
+
                 <div class="col-md-8">
                     <h3>帥氣的西裝無人能敵</h3>
                     <p>This is a longer card with supporting text below as a natural lead-in to additional content. This
                         content is a little bit longer.</p>
                     <h4 class="text-center h3">合身剪裁</h4>
-                    <img src="https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=634" class="w-100 mb-5">
+                    <img src="https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=634" class="w-100 mb-4">
                     <h4 class="text-center h3">簡單就好</h4>
-                    <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1500" class="w-100 mb-5">
+                    <img src="https://images.unsplash.com/photo-1497339100210-9e87df79c218?w=1500" class="w-100 mb-4">
                     <h4 class="text-center h3">不占空間</h4>
-                    <img src="https://images.unsplash.com/photo-1475530060488-75a6de1dca6f?w=675" class="w-100 mb-5">
+                    <img src="https://images.unsplash.com/photo-1475530060488-75a6de1dca6f?w=675" class="w-100 mb-4">
+
+                    <div class="p-3" style="background-color: #e7e8ea">
+                        <h2 class="text-center">購物說明</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, at! Totam, exercitationem
+                            repellat. Saepe facere amet expedita perferendis voluptatem dicta dignissimos tempora ut
+                            atque, rerum doloribus? Magni, blanditiis. Assumenda, distinctio!</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- 結帳頁面製作 -->
+    <section class="mt-3">
+        <h2>六角血拚 結帳</h2>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

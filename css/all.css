@@ -34,3 +34,6 @@ body {
 .box-shadow:hover {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); }
+
+.btn.disabled {
+  pointer-events: none; }

@@ -34,3 +34,8 @@
 .box-shadow:hover{
     box-shadow: 0  4px  10px  rgba(0,0,0,0.25);
 }
+
+//讓缺貨商品無法被點擊,避免點擊時造成其他選項被取消
+.btn.disabled{
+    pointer-events: none;
+}
