@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <!-- <div class="gototop">
+        <i class="fas fa-arrow-up fa-4x"></i>
+    </div> -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><i class="fas fa-bone text-info mr-2"></i>瞎拚買賣</a>
         <div class="dropdown ml-auto">
@@ -330,7 +333,7 @@
     <!-- 商品分頁製作 -->
     <section class="mt-5">
         <div class="container">
-            <ol class="breadcrumb bg-transparent pl-0">
+            <ol class="breadcrumb bg--transparent pl-0">
                 <li class="breadcrumb-item"><a href="#">首頁</a></li>
                 <li class="breadcrumb-item"><a href="#">金牌專賣店</a></li>
                 <li class="breadcrumb-item active" aria-current="page">金牌西裝</li>
@@ -514,11 +517,80 @@
             </div>
         </div>
     </section>
+    <!-- 結帳完成頁面製作 -->
+    <section class="mt-3">
+        <h2 class="h1 text-center text-secondary">瞎拚買賣 結帳完成</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 m-auto">
+                    <div class="alert alert-success text-center rounded-pill" role="alert">
+                        完成
+                    </div>
+                    <h3 class="font-weight-bold text-center">購買資訊</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th style="width: 650px;" scope="col">商品名稱</th>
+                                <th style="width: 150px;" scope="col">數量</th>
+                                <th scope="col" style="width: 100px;">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle"><a href="#" class="text-dark" data-toggle="modal"
+                                        data-target="#removeModal" data-backdrop="static" data-title="刪除 金牌西裝"><i
+                                            class="far fa-trash-alt"></i></a></td>
+                                <td class="align-middle"><img
+                                        src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350"
+                                        style="width: 90px;"></td>
+                                <td class="align-middle" style="width: 650px;">金牌西裝</th>
+                                <td class="align-middle">1件</td>
+                                <td class="text-right align-middle">$520</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right" colspan="4">運費</th>
+                                <td class="text-right font-weight-bold">$60</td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="text-right" colspan="4">合計</th>
+                                <td class="text-right font-weight-bold">$580</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="text-center">個人資料</h4>
+                    <table class="table mt-3">
+                        <tbody>
+                            <tr>
+                                <th>Email</th>
+                                <td>ag3456***@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>姓名</th>
+                                <td>咬*手手</td>
+                            </tr>
+                            <tr>
+                                <th>電話</th>
+                                <td>987654***</td>
+                            </tr>
+                            <tr>
+                                <th>地址</th>
+                                <td>重慶南路1段122號</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
 
     <footer class="bg-light py-5 text-center mt-4">
         <p class="text-secondary d-md-inline">© Copright 2019 瞎拚買賣</p>
-        <a href="#" class="ml-2">Instagram</a>
-        <a href="#" class="ml-2">Facebook</a>
+        <a href="#" class="ml-2"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#" class="ml-2"><i class="fab fa-facebook-square"></i> Facebook</a>
         <a href="#" class="ml-2">About</a>
         <p class="text-secondary mt-4">Made with Bootstrap4</p>
     </footer>
@@ -556,6 +628,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7e3354ec65.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="js/all.js"></script>
 </body>
 

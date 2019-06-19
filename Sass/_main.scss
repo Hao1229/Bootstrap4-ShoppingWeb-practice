@@ -1,49 +1,70 @@
-.btn-cart{
-    position: relative;
+@mixin ipadUp {
+    @media (min-width:768px) {
+        @content
+    }
 }
 
-.btn-cart .badge{
-    position: absolute;
-    top: -1px;
-    right: 0;
+//購物車圖案與數字(用badge製作)位置製作
+.btn-cart{
+    position: relative !important;
+    .badge{
+        position: absolute !important;
+        top: -1px !important;
+        right: 0 !important;
+    }
 }
 
 //因為dropdown在navbar裡無法根據畫面空間自動變更顯示位置，故下此css讓其恢復功能
 .dropdown-menu--right{
-    right: 0;
-    left: auto;
+    right: 0 !important;
+    left: auto !important;
 }
-//
+
+//jumbotron背景圖片
 .jumbotron-bg{
     background-image: url('https://images.unsplash.com/photo-1477901492169-d59e6428fc90?w=1350');
 }
 
-.bg--cover{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
+//背景圖片設定置中、最小高度等
+.bg{
+    &--cover{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 400px;
+    }
+    &--transparent{
+        background-color: transparent;
+    }
 }
-
-
+   
+//card group陰影效果
 .box-shadow{
     box-shadow: 0  3px  5px  rgba(0,0,0,0.16);
     transition: box-shadow .3s;
-}
-
-.box-shadow:hover{
-    box-shadow: 0  4px  10px  rgba(0,0,0,0.25);
+    &:hover{
+        box-shadow: 0  4px  10px  rgba(0,0,0,0.25);
+    }
 }
 
 //讓缺貨商品無法被點擊,避免點擊時造成其他選項被取消
 .btn.disabled{
     pointer-events: none;
 }
-//
-.bg-transparent{
-    background-color: transparent;
+
+//gototop固定
+.gototop{
+    position: fixed; 
+    bottom:5px;
+    right:10px;
+    z-index: 999999999;
+    opacity: 0.5;
+    &:hover{
+        cursor: pointer;
+    }
+    @include ipadUp(){
+        opacity: 1;
+    }
 }
 
-.gototop{
-    cursor: pointer;
-}
+

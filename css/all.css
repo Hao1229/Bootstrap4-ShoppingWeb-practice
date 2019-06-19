@@ -2,16 +2,15 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Microsoft JhengHei","Segoe UI","Roboto","Helvetica Neue", Arial, sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .btn-cart {
-  position: relative; }
-
-.btn-cart .badge {
-  position: absolute;
-  top: -1px;
-  right: 0; }
+  position: relative !important; }
+  .btn-cart .badge {
+    position: absolute !important;
+    top: -1px !important;
+    right: 0 !important; }
 
 .dropdown-menu--right {
-  right: 0;
-  left: auto; }
+  right: 0 !important;
+  left: auto !important; }
 
 .jumbotron-bg {
   background-image: url("https://images.unsplash.com/photo-1477901492169-d59e6428fc90?w=1350"); }
@@ -22,6 +21,9 @@ body {
   background-position: center center;
   min-height: 400px; }
 
+.bg--transparent {
+  background-color: transparent; }
+
 .box-shadow {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
@@ -30,16 +32,21 @@ body {
   -o-transition: box-shadow .3s;
   transition: box-shadow .3s;
   transition: box-shadow .3s, -webkit-box-shadow .3s; }
-
-.box-shadow:hover {
-  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); }
+  .box-shadow:hover {
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); }
 
 .btn.disabled {
   pointer-events: none; }
 
-.bg-transparent {
-  background-color: transparent; }
-
 .gototop {
-  cursor: pointer; }
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 999999999;
+  opacity: 0.5; }
+  .gototop:hover {
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .gototop {
+      opacity: 1; } }
