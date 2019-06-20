@@ -7,10 +7,10 @@ $(document).ready(function () {
       modal.find('.modal-title').text('確認' + title) // 寫入資料
     });
     //回到頂部jQuery
-    // $('.gototop').click(function (e) { 
-    //   e.preventDefault();
-    //   $('html,body').animate({scrollTop:0},1500);
-    // });
+    $('.gototop').click(function (e) { 
+      e.preventDefault();
+      $('html,body').animate({scrollTop:0},1500);
+    });
   });
 
 
